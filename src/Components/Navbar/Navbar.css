@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-around;
     padding: 16px;
-    box-shadow: 0 1px 3px -2px #fff;
+    box-shadow: 0 1px 5px -2px #fff;
     background-color: #000;
 }
 
@@ -12,7 +12,7 @@
     gap: 10px;
 }
 .nav-logo p{
-    color: #fee904;
+    color: orangered;
     font-size: 38px;
     font-weight: 600;
 }
@@ -24,6 +24,9 @@
     gap: 50px;
     font-size: 20px;
     font-weight: 500;
+}
+.nav-menu:visited{
+    color: #cdcaa7;
 }
 .nav-menu li{
     display: flex;
@@ -38,7 +41,7 @@
     width: 80px;
     height: 3px;
     border-radius: 10px;
-    background: #fe4304;
+    background: orangered;
 }
 .nav-login-cart{
     display: flex;
@@ -57,7 +60,7 @@
 
 }
 .nav-login-cart button:active{
-    background: #fe4304;
+    background: #efa54a;
 }
 .nav-login-cart img{
     height: 58px;
