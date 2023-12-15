@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './Navbar.css'
 import shopping_cart from '../Assets/shopping_cart.png'
 import { Link } from 'react-router-dom';
+import logo_colors from '../Assets/logo_colors.png'
 
 const Navbar = () => {
 
@@ -10,6 +11,7 @@ const Navbar = () => {
   return (
     <div className='navbar'>
       <div className="nav-logo">
+        <img src={logo_colors} alt="" />
         <p>BAAHE</p>
       </div>
       <ul className="nav-menu">

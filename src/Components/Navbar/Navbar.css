@@ -11,6 +11,10 @@
     align-items: center;
     gap: 10px;
 }
+.nav-logo img{
+    width: 100px;
+    height: 100px;
+}
 .nav-logo p{
     color: orangered;
     font-size: 38px;
@@ -25,9 +29,7 @@
     font-size: 20px;
     font-weight: 500;
 }
-.nav-menu:visited{
-    color: #cdcaa7;
-}
+
 .nav-menu li{
     display: flex;
     flex-direction: column;
@@ -52,8 +54,8 @@
     width: 145px; /*157 original*/
     height: 50px; /*58 original*/
     outline: none;
-    border: 1px solid #7a7a7a;
-    color: #fff;
+    border: 1px solid orangered;
+    color: orangered;
     background: #000;
     border-radius: 75px;
     font-size: 20px;

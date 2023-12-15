@@ -22,15 +22,15 @@
     font-size: 100px;
     font-weight: 700;
 }
-.hero-hand-icon{
+/* .hero-hand-icon{
     display: flex;
     align-items: center;
     gap: 20px;
-}
+} */
 
-.hero-hand-icon img{
+/* .hero-hand-icon img{
     width: 105px;
-}
+} */
 .hero-latest-btn{
     display: flex;
     justify-content: center;
@@ -40,7 +40,7 @@
     height: 70px;
     border-radius: 75px;
     margin-top: 30px;
-    background: orangered;
+    background: #ff4500;
     color: #fff;
     font-size: 22px;
     font-weight: 500;
