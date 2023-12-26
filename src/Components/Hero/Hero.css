@@ -57,5 +57,9 @@
     height: 756px;
 }
 
-
-
+@media  screen and (max-width: 992px) {
+    .hero {
+        width: 100vw;
+        flex-direction: column;
+    }
+}
