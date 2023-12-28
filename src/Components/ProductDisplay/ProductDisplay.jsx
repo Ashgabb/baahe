@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import './ProductDisplay.css'
 import star_icon from '../Assets/star_icon.png'
 import star_dull_icon from '../Assets/star_dull_icon.png'
+import { ShopContext } from '../../Context/ShopContext'
 
 const ProductDisplay = (props) => {
     const {product} = props;
+    const {addToCart} = useContext(ShopContext);
   return (
     <div className='productdisplay'>
       <div className="productdisplay-left">
@@ -20,7 +22,7 @@ const ProductDisplay = (props) => {
       </div>
       <div className="productdisplay-right">
         <h1>{product.name}</h1>
-        <div className="pd-right-star">
+        <div className="pd-right-stars">
             <img src={star_icon} alt="" />
             <img src={star_icon} alt="" />
             <img src={star_icon} alt="" />
@@ -35,7 +37,7 @@ const ProductDisplay = (props) => {
         <div className="pd-right-description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consectetur molestias delectus nam eum laborum modi non voluptas fugit deleniti?
         </div>
-        <div className="pd-right-size">
+        <div className="pd-right-sizes">
             <h1>Select Size</h1>
             <div className="pd-right-size">
                 <div>S</div>
@@ -45,9 +47,9 @@ const ProductDisplay = (props) => {
                 <div>XXL</div>
             </div>
         </div>
-        <button>ADD TO CART</button>
+        <button onClick={()=>{addToCart(product.id)}}>ADD TO CART</button>
         <p className="pd-right-category"><span>Category :</span>Women, T-Shirt, Crop Top</p>
-        <p className="pd-right-category"><span>Category :</span>Women, T-Shirt, Crop Top</p>
+        <p className="pd-right-category"><span>Tags :</span>Modern, Latest</p>
         <p className="pd-right-category"><span>Category :</span>Women, T-Shirt, Crop Top</p>
       </div>
     </div>
